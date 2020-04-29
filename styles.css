@@ -1,0 +1,28 @@
+
+
+/*.button-group:hover{
+  transform: scale(1.1);
+  transform-origin: 50% 50%;
+  transition: 1s;
+  z-index: 1000;
+}*/
+
+.myOverlay {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(images/tech95opacity.jpg);
+}
+
+.shape-overlays {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0; 
+    left: 0;
+}
