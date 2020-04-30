@@ -1,5 +1,16 @@
 const $buttonGroup = $('.button-group');
 
-$buttonGroup.hover(function(){
-   gsap.to(".button-group", {duration: 2, scale: 2, transformOrigin: 'center center'});
-});
+$buttonGroup.hover(over, out);
+
+function over(){
+    TweenLite.staggerTo($buttonGroup, 1, {
+        scaleX: 1.01,
+        scaleY: 1.01,
+        ease: Elastic.easeOut,
+        transformOrigin:"50% 50%"
+    })
+};
+
+function out(){};
+
+
