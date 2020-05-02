@@ -1,13 +1,5 @@
-
-
-/*.button-group:hover{
-  transform: scale(1.1);
-  transform-origin: 50% 50%;
-  transition: 1s;
-  z-index: 1000;
-}*/
-
-.myOverlay {
+/* overlay style with background image */
+.myAnimatedOverlay {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -19,6 +11,7 @@
     background-image: url(images/tech95opacity.jpg);
 }
 
+/* SVG scaling display styles */
 .shape-overlays {
     width: 100vw;
     height: 100vh;
@@ -27,6 +20,7 @@
     left: 0;
 }
 
+/* cursor change on hover */
 .button-group:hover {
     cursor: pointer;
 }
