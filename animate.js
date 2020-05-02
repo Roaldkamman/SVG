@@ -70,14 +70,15 @@ function out(){
 $buttonGroup.click(function(){
     // deactivates the event handlers to prevent user from triggering animations by accident:
     $buttonGroup.off();
-    // pulls all elements closer and bursts them out violently after reaching 0 scale to create the illusion of an implosion: 
+    // scale the button down and transition the opacity to 0: (I would scale it down further but that looks wonky in google chrome)
     TweenLite.to($buttonGroup, 1, {
         scaleX: 0.9,
         scaleY: 0.9,
         autoAlpha: 0,
         transformOrigin:"center center"
     })
-
+    
+    // pulls all elements closer and bursts them out violently after reaching 0 scale to create the illusion of an implosion: 
     TweenLite.staggerTo($spiral, 1.5, {
         scaleX: 0,
         scaleY: 0,
